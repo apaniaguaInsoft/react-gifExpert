@@ -20,11 +20,9 @@ export const AddCategory = ({ onNewValue }) => {
 
     }
     return (
-        <form onSubmit={onSubmit}>
-            <input
-                type="text"
-                placeholder="buscar gifs"
-                value={inputValue} onChange={onInputChange} />
+        <form className="categoryAdd" onSubmit={onSubmit}>
+            <input type="text" placeholder="buscar gifs" value={inputValue} onChange={onInputChange} />
+            <button type="submit">Buscar</button>
         </form>
     )
 }
